@@ -1,7 +1,7 @@
 {
     "name": "com.github.shirokuro-bit.googledrivebackup_for_unity",
     "author": "kazu",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "displayName": "Google Drive Backup for Unity",
     "description": "This is a test package",
     "unity": "2020.3"

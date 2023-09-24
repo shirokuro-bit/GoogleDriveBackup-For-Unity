@@ -133,9 +133,8 @@ public class GoogleDriveBackup : EditorWindow
 
     private Task<UserCredential> GetUserCredential()
     {
-        // サービスアカウントキーファイルのパス
-        string CLIENT_SECRET_PATH = Path.Combine(PROJECT_PATH, "Assets/Editor/client_secret.json");
-        string CRED_PATH = Path.Combine(PROJECT_PATH, "Assets/Editor/token.json");
+        string CLIENT_SECRET_PATH = "Packages/com.github.shirokuro-bit.googledrivebackup_for_unity/Editor/client_secret.json";
+        string CRED_PATH = Path.Combine(PROJECT_PATH, "Assets/authorize.token");
         string[] scope = new string[] { DriveService.ScopeConstants.Drive };
 
         return GoogleWebAuthorizationBroker.AuthorizeAsync(
